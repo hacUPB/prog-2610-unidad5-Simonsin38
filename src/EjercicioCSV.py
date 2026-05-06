@@ -8,8 +8,5 @@ with open(".\\Archivos\\EjercicioCSV.csv", "r") as file:
             edadtot += int(edad[1])
             contador_edad += 1
     edadprom = edadtot / contador_edad
-    diclector = csv.DictReader(file, delimiter = ";")
-    for disionario in diclector:
-          print(disionario)
 print(f"La edad promedio del grupo de personas es de aproximadamente {round(edadprom)} años")
     
